@@ -3,13 +3,41 @@
 	<title>Holdin' On</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/app.css"></link>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"></link>
 </head>
 <body>
-<div id="canvas"></div>
-<audio controls id="song">
-  <source src="holdin_on.mp3" type="audio/mpeg">
-	Your browser does not support the audio element.
-</audio>
+<div id="loadingAnimation">
+	<div class="dot">
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+	</div>
+</div>
+<div id="canvas" class="blur">
+	<div id="songPlayer">
+    <div id="songInfo">
+  		<img id="songArtwork"></img>
+  		<div id="songMetadata">
+  			<a id="currSong"></a>
+  		</div>
+    </div>
+    <div id="audioControls">
+
+    </div>
+  	<form id="searchContainer">
+      <input id="search" placeholder="Search for a new song..." type="text" name="search"></input>
+      <button id="searchButton" type="submit">Play</button>
+      <ul id="searchList">
+      </ul>
+  	</form>
+	</div>
+  <audio id="song" controls>
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+<script src="js/vendor/stats.js"></script>
 <script src="js/vendor/three.min.js"></script>
 <script src="js/vendor/tween.min.js"></script>
 <script src="js/vendor/jquery.min.js"></script>
