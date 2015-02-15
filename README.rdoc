@@ -1,28 +1,17 @@
-== README
+# Three Audio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[three-audio.herokuapp.com] (http://three-audio.herokuapp.com/)
+ 
+> A 3d sound visualizer. 
 
-Things you may want to cover:
+Currently under construction but basic MVP is up. I got the inspiration from the awesome website [georgeandjonathan.com](http://www.georgeandjonathan.com/). I wanted to learn more about using Three.js so I used this app as an opportunity for that. It's not too complicated yet -- it currently just moves an object based on the volume of the song. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+#### Technologies:
+* JavaScript
+* JQuery
+* AJAX
+* Three.js
+* Tween.js
+* HTML
+* CSS
+* Consumes Soundcloud.info API
