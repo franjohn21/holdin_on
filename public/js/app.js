@@ -63,7 +63,7 @@ var visualizer = (function(){
   }
   function newSearch(){
     var count = 0;
-    $.get('http://api.soundcloud.com/tracks/?client_id=' + client_id, {q: $("#search").val()})
+    $.get('https://api.soundcloud.com/tracks/?client_id=' + client_id, {q: $("#search").val()})
      .done(function(response){
       console.log(response)
       $("#searchList li").remove();
@@ -166,8 +166,8 @@ var visualizer = (function(){
   }
   function loadSong(){
     addLoadingScreen();
-    song.src = 'http://api.soundcloud.com/tracks/' + currTrackId + '/stream?client_id=' + client_id;
-    $.get('http://api.soundcloud.com/tracks/' + currTrackId + '.json?client_id=' + client_id, function(songData){
+    song.src = 'https://api.soundcloud.com/tracks/' + currTrackId + '/stream?client_id=' + client_id;
+    $.get('https://api.soundcloud.com/tracks/' + currTrackId + '.json?client_id=' + client_id, function(songData){
       $("#songArtwork").attr("src",songData.artwork_url)
       $("#currSong").text(songData.title)
       $("#currSong").attr("href", songData.permalink_url)
