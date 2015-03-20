@@ -179,7 +179,7 @@ var visualizer = (function(){
   }
 
   function setupAudio(){
-    currTrackId = '63121479';
+    currTrackId = '114238860';
     client_id = '74b881a5de59c54912d700542b60b955'
     var context = new AudioContext();
     analyzer = context.createAnalyser();
